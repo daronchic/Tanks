@@ -10,6 +10,7 @@ SOURCES += main.cpp \
     TinyXML/tinyxmlparser.cpp \
     level.cpp
 
+
 LIBS += -LC:/SFML/lib
 
 CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network -lsfml-window -lsfml-system
