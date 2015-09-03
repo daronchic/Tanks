@@ -1,8 +1,13 @@
+#include "game.h"
+
 #include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
 int main()
 {
-    sf::Window window(sf::VideoMode(800, 600), "My window");
-
+    Game game(800, 600, false, "The Tanks!");
+    game.loadData();
+    game.initGame();
+    game.update();
     return 0;
 }

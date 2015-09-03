@@ -8,17 +8,29 @@ SOURCES += main.cpp \
     TinyXML/tinyxml.cpp \
     TinyXML/tinyxmlerror.cpp \
     TinyXML/tinyxmlparser.cpp \
-    level.cpp
+    level.cpp \
+    entity.cpp \
+    player.cpp \
+    game.cpp
 
 
-LIBS += -LC:/SFML/lib
-
-CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network -lsfml-window -lsfml-system
-
-INCLUDEPATH += C:/SFML-master/include
-DEPENDPATH += C:/SFML-master/include
+unix {
+    LIBS += -L$pwd//3rdParty/linux/SFML-2.3.1/lib/
+    INCLUDEPATH += $pwd//3rdParty/linux/SFML-master/SFML/include/
+    DEPENDPATH += $pwd//3rdParty/linux/SFML-master/SFML/include/
+}
+win32 {
+    LIBS += -LC:\Users\Doerty\Documents\TheTanks\3rdParty\windows\SFML\lib
+    INCLUDEPATH += "C:\Users\Doerty\Documents\TheTanks\3rdParty\windows\SFML-master\include"
+    DEPENDPATH += "C:\Users\Doerty\Documents\TheTanks\3rdParty\windows\SFML-master\include"
+}
+CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
 
 HEADERS += \
     TinyXML/tinystr.h \
     TinyXML/tinyxml.h \
-    level.h
+    level.h \
+    view.h \
+    entity.h \
+    player.h \
+    game.h

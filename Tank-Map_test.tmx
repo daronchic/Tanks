@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="150" height="150" tilewidth="32" tileheight="32" nextobjectid="99">
+ <tileset firstgid="1" name="Tank_sprite_test2-Tailset" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="Tank_sprite_test2-Tailset.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Floor" width="150" height="150">
+  <data encoding="base64" compression="zlib">
+   eJzt20EKgCAURVER2v+W24BamY+KzuCMtIF0B/KpWkqpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwMdsCT5+B97nbha5o0RUJoy7ONKMrWnRFgq5I0BUJK7oyk6DVxczalT0ze/k2XZGQ6Kr3nK7+46irmTuTrki8a12hKxJ0RcKK72TOzql0xchsH7piRFck6IoEXZGgKxL8YwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANC3Ayr8sU8=
+  </data>
+ </layer>
+ <layer name="trees" width="150" height="150">
+  <data encoding="base64" compression="zlib">
+   eJzt1cEJACAQA8GAdqD91+q14EMOZAb2n18SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADoM6rZPYLvrGp3jwC45BN5wScCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAd8ugBd
+  </data>
+ </layer>
+ <layer name="characters" width="150" height="150">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6Dbv7Qx7hwkIAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Y9oBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCUBR0yAAI=
+  </data>
+ </layer>
+ <objectgroup name="collisions">
+  <object id="78" name="Solid" x="415" y="1729" width="33" height="286"/>
+  <object id="79" name="Solid" x="445" y="1982" width="290" height="32"/>
+  <object id="80" name="Solid" x="703" y="1632" width="32" height="348"/>
+  <object id="81" name="Solid" x="192" y="1631" width="511" height="32"/>
+  <object id="83" name="Solid" x="192" y="1664" width="31" height="480"/>
+  <object id="84" name="Solid" x="222" y="2112" width="672" height="30"/>
+  <object id="86" name="Solid" x="864" y="1953" width="31" height="158"/>
+  <object id="87" name="Solid" x="735" y="1856" width="353" height="31"/>
+  <object id="89" name="Solid" x="1055" y="1886" width="31" height="448"/>
+  <object id="90" name="Solid" x="607" y="2143" width="32" height="193"/>
+  <object id="91" name="Solid" x="641" y="2303" width="413" height="31"/>
+  <object id="92" name="Solid" x="510" y="1790" width="64" height="64"/>
+  <object id="95" name="Solid" x="605" y="1888" width="64" height="64"/>
+  <object id="98" name="Player" x="672" y="2207" width="32" height="32"/>
+ </objectgroup>
+</map>
